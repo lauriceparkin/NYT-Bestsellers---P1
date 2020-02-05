@@ -1,0 +1,152 @@
+
+
+body {
+  background-image: url(images/bg1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+
+
+select { 
+  appearance: none; 
+  outline: 0; 
+  background: white; 
+  background-image: none; 
+  height: 100%; 
+  color: black; 
+  cursor: pointer; 
+  border:1px solid black; 
+  border-radius:3px; 
+} 
+
+
+
+h1{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  letter-spacing: -2px;
+  text-align: center;
+  padding: 20px;
+  
+}
+
+.one{
+  background-color: black;
+  text-align: center;
+  margin: auto;
+  width: 45%;
+  
+}
+
+.selectorButtons{
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 50%;
+  margin: 100px auto;
+  padding: 10px;
+  cursor: pointer;
+
+}
+
+.source{
+  text-align: right;
+  font-size: 25px;
+  font-style: italic;
+  letter-spacing: -1px;
+}
+
+button{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  height: 60px;
+  width: 80px;
+  border: black;
+  font-size: 14px;
+}
+
+
+
+/* color for hover button / rgb(194, 68, 14) */
+
+.two{
+  text-size: 16px;
+  text-align: center;
+  /* margin: 100px auto; */
+  /* width: 40%; */
+}
+
+
+
+/* ul {
+  justify-content: center;
+  display: flex;
+}
+
+li{
+  display: block;
+} */
+
+
+
+.returnBooks{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
+  grid-column-start: 2;
+
+}
+
+
+
+
+/* .returnBooks{
+  display: flex;
+
+} */
+
+.image{
+  width: 300px;
+  overflow: hidden;
+  border: 2px solid black;
+ 
+}
+
+/* .image img{
+  height: 200px;
+  width: 100%;
+} */
+
+.rank{
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 300px;
+  
+}
+
+/* .row{
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+} */
+
+
+
+/* .rank{
+  display: inline;
+  color:red;
+  flex-direction: column;
+}
+
+.title{
+  display: inline;
+  flex-direction: column;
+} */
