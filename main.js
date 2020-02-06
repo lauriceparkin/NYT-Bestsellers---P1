@@ -10,6 +10,38 @@ let day = document.querySelector('.day')
 let button = document.querySelector('button')
 
 
+//write year function here and remove above - USE QUERY SELECTOR AND REMOVE MANUAL LIST OF NUBERS:
+
+// function range(start, end) {
+//     let year = [];
+//     for (let i = start; i <= end; i++) {
+//         year.push(i);
+//     }
+//     return year.reverse();
+
+// }
+// console.log(range(1970, 2020));
+
+
+//new way that does not work
+let range = (start, end) => {
+
+  for (let i = start; i >= end; i--) {
+    console.log(i)
+    let yearOption = document.createElement('option');
+    yearOption.innerHTML = i
+    console.log(yearOption)
+    year.append(yearOption);
+    // console.log(year);
+  }
+
+}
+// console.log(range(1970, 2020));
+
+range(2020, 2009);
+
+
+
 
 
 button.addEventListener("click", async () => {
@@ -31,7 +63,7 @@ let renderBooks = (bookLists) => {
   let returnBooks = document.querySelector(".returnBooks")
   returnBooks.innerHTML = ''
 
-  console.log(bookLists)
+  console.log(bookLists)//set up to check api lists
 
   bookLists.filter(list => {//big outside array
     let booksInner = list.books

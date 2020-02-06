@@ -26,29 +26,30 @@ select {
 
 
 h1{
-  color: white;
+  color: black;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 40px;
-  letter-spacing: -2px;
+  font-size: 60px;
+  letter-spacing: -4px;
   text-align: center;
   padding: 20px;
   
 }
 
 .one{
-  background-color: black;
+  background-color: white;
+
   text-align: center;
   margin: auto;
-  width: 45%;
+  width: 50%;
   
 }
 
 .selectorButtons{
-  background-color: black;
+  background-color:white;
   text-align: center;
-  color: white;
+  color: black;
   font-family: Arial, Helvetica, sans-serif;
-  width: 50%;
+  width: 44%;
   margin: 100px auto;
   padding: 10px;
   cursor: pointer;
@@ -72,6 +73,10 @@ button{
   font-size: 14px;
 }
 
+button:hover{
+  background-color: rgb(194, 68, 14)
+}
+
 
 
 /* color for hover button / rgb(194, 68, 14) */
@@ -84,26 +89,27 @@ button{
 }
 
 
-
-/* ul {
-  justify-content: center;
-  display: flex;
-}
-
-li{
-  display: block;
-} */
-
-
-
 .returnBooks{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
-  grid-column-start: 2;
+  grid-column-start: 4;
+  grid-auto-rows: 1fr; 
+  margin-bottom: 50px;
 
+  /* display: grid;
+  grid-gap: 1rem;
+  grid-template-columns:  repeat(5, 300px);
+  grid-template-rows: repeat(5, 500px);
+  margin-left: 75px; */
 }
 
+/* @media screen and (min-width: 40em) {
+  .returnBooks{
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 2px;
+  }
+} */
 
 
 
@@ -112,24 +118,26 @@ li{
 
 } */
 
-.image{
+/* .image{
   width: 300px;
   overflow: hidden;
   border: 2px solid black;
  
-}
-
-/* .image img{
-  height: 200px;
-  width: 100%;
 } */
+
+.image{
+  height: 350px;
+  width: 250px;
+  border: 2px solid black;
+}
 
 .rank{
   background-color: black;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  width: 300px;
-  
+  width: 250px;
+  margin: 0 auto;
+
 }
 
 /* .row{
@@ -140,13 +148,45 @@ li{
 
 
 
-/* .rank{
-  display: inline;
-  color:red;
-  flex-direction: column;
-}
+
 
 .title{
-  display: inline;
-  flex-direction: column;
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 250px;
+} 
+
+
+.author{
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 250px;
+
+}
+
+/* footer{
+  background-color: white;
+  text-align: center;
+  color: black;
+  grid-row-start: 2;
+  grid-row-end: 3;
 } */
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.copyright{
+  text-align: center;
+}
