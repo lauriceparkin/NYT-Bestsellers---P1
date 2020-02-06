@@ -10,20 +10,8 @@ let day = document.querySelector('.day')
 let button = document.querySelector('button')
 
 
-//write year function here and remove above - USE QUERY SELECTOR AND REMOVE MANUAL LIST OF NUBERS:
 
-// function range(start, end) {
-//     let year = [];
-//     for (let i = start; i <= end; i++) {
-//         year.push(i);
-//     }
-//     return year.reverse();
-
-// }
-// console.log(range(1970, 2020));
-
-
-//new way that does not work
+//for loop set up to auto populate years
 let range = (start, end) => {
 
   for (let i = start; i >= end; i--) {
@@ -32,14 +20,13 @@ let range = (start, end) => {
     yearOption.innerHTML = i
     console.log(yearOption)
     year.append(yearOption);
-    // console.log(year);
+
   }
 
 }
-// console.log(range(1970, 2020));
+
 
 range(2020, 2009);
-
 
 
 
@@ -67,7 +54,7 @@ let renderBooks = (bookLists) => {
 
   bookLists.filter(list => {//big outside array
     let booksInner = list.books
-    //look up splice and slice to limit length of list
+
     booksInner.map(book => {//smaller inside array
 
 
@@ -92,8 +79,10 @@ let renderBooks = (bookLists) => {
       authorDiv.classList.add('author')
       authorDiv.innerHTML = `by ${book.author}`
 
+      //original data pull below, but adding the ranks, titles, and authors did not look good and it was redundant info.
+      // bookDetails.append(img, rankDiv, titleDiv, authorDiv)
 
-      bookDetails.append(img, rankDiv, titleDiv, authorDiv)
+      bookDetails.append(img)
 
     })
   })
@@ -105,8 +94,7 @@ let renderBooks = (bookLists) => {
 
 
 
-//Data I want to show
-
+//Data to pull from API:
 
 // results.lists.books.rank
 // results.lists.books.book_image
