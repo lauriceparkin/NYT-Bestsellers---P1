@@ -1,8 +1,7 @@
 by Laurice Parkin 
 
-Project 1 - Software Engineering Immersive, General Assembly, NYC
+Judge-A-Book
 
-Working Title: Judge a Book
  Description: This app gives the user the ability to search the Book Best Seller Database of The New York Times based on date. It features a clean and minimal interface with an engaging photograph providing a backdrop for boxes of text featuring Helvetica which conveys a strong, modern interface. It’s a simple set-up allowing the user to explore the literary, cultural zeitgeist based on what books were at the top of the charts in the last decade. 
 
 API: Book API from The New York Times. 
